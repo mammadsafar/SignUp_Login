@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css"> -->
+    
+    <%- include('../partials/head_link')-%>
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('../partials/header')-%>
+
+
+    <div class="container">
+        <form class="signUp">
+          <h3>Create Your Account</h3>
+
+          <input id="signUp_name" class="w100" type="name" placeholder="User Name" reqired autocomplete='off' />
+          <input id="signUp_email" class="w100" type="email" placeholder="Insert eMail" reqired autocomplete='off' />
+          <select name="gender" id="gender">
+            <option value="Gender">Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <input id="signUp_pass"  type="password" placeholder="Insert Password" reqired />
+          <input id="signUp_verify" type="password" placeholder="Verify Password" reqired />
+
+          <button class="form-btn sx log-in" type="button">Log In</button>
+          <button id="signUp_btn" class="form-btn dx" type="button">Sign Up</button>
+        </form>
+        <form class="signIn">
+          <h3>Welcome</br>Back !</h3>
+          <!-- <button class="fb" type="button">Log In With Facebook</button> -->
+          <!-- <p>- or -</p> -->
+          <input id="login_name" type="Name" placeholder="User Name" autocomplete='off' reqired />
+          <input id="login_pass" type="password" placeholder="Insert Password" reqired />
+          <button class="form-btn sx back" type="button">Back</button>
+          <button id="login_btn" class="form-btn dx" type="button">Log In</button>
+        </form>
+      </div>
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Sign Up
+</button>
+
+
+
+    <!--<script src="js/search.js"></script>
+    <script src="js/home.js"></script> -->
+    <script src="js/login.js"></script>
+
+    <%- include('../partials/footer_link')-%>
+
+</body>
+
+</html>
